@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>kanakaraju gullapudi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="raju.jpg">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <style>
+        .matter
+        {
+        	background-color:#cccc99;
+        	border-radius:50%;
+        	width:150px;
+        	height:150px;
+        	padding-top:45%;
+        	text-align:center;
+        	box-shadow:0px 7px 8px rgba(0,0,0,0.4);
+        }
+        #cont
+        {
+        	background-color:#3f51b5;
+        	box-shadow:0px 0px 8px rgba(0,0,0,0.4);
+        }
+        #my_image
+        {
+            border:5px solid white;
+            margin-top:-30%;
+            width: 150px;
+            height: 150px;
+        }
+        
+          i.fa-birthday-cake, i.fa-home, i.fa-heart, i.glyphicon-education, i.fa-university, i.fa-clock-o
+        {
+            font-size:60px;
+            background-color:#cccc99;
+            box-shadow:0px 7px 8px rgba(0,0,0,0.4);
+            border-radius:50%;
+            width:150px;
+            height:150px;
+            padding-top:30%;
+            text-align:center;
+        }
+
+        #name_background
+        {
+        	box-shadow:0px 7px 8px rgba(0,0,0,0.4);
+        	margin-top:-10%;
+        }
+        #my_name
+        {
+            text-align:center;
+            margin-top:19%;
+            margin-bottom:30px;
+        }
+
+        /* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+}
+    /* flip the pane when hovered */
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+        margin-top: -20px;
+    }
+
+.flip-container, .front, .back {
+    
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front 
+{
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back
+ {
+    transform: rotateY(180deg);
+}
+    </style>
+
+<style>
+	
+
+	@media only screen and (max-width: 1200px)
+	{
+		#name_background
+		{
+			margin-top:-12%;
+		}
+		#my_name
+		{
+			margin-top:22%;
+		}
+	}
+
+	@media only screen and (max-width: 992px)
+	{
+		#name_background
+		{
+			margin-top:-18%;
+		}
+		#my_name
+		{
+			margin-top:32%;
+		}
+		#my_image
+		{
+			margin-top: -50%;
+			margin-left: -25px;
+		}
+		.matter
+		{
+        	width:110px;
+        	height:110px;
+        	padding-top: 30%;
+		}
+		  i.fa-birthday-cake, i.fa-home, i.fa-heart, i.glyphicon-education, i.fa-university, i.fa-clock-o
+        {
+            font-size:50px;
+            width:110px;
+            height:110px;
+            padding-top: 22%;
+            
+        }
+	}
+	@media only screen and (max-width: 768px)
+	{
+		.sarath
+		{
+			margin-left: -60px;
+		}
+		#name_background
+		{
+			margin-top:-22%;
+		}
+		#my_image
+		{
+			margin-top: -10%;
+			margin-left: 10px;
+		}
+		#my_name
+		{
+			margin-top:30%;
+		}
+		.matter
+		{
+        	width:130px;
+        	height:130px;
+        	padding-top: 38%;
+		}
+		  i.fa-birthday-cake, i.fa-home, i.fa-heart, i.glyphicon-education, i.fa-university, i.fa-clock-o
+        {
+            font-size:50px;
+            width:130px;
+            height:130px;
+            padding-top: 29%;
+            
+        }
+	
+	}
+	@media only screen and (max-width: 631px)
+	{
+		#name_background
+		{
+			margin-top:-26%;
+		}
+		#my_image
+		{
+			margin-top: -14%;
+			margin-left: 10px;
+		}
+		#my_name
+		{
+			margin-top:35%;
+		}
+		.matter
+		{
+        	width:120px;
+        	height:120px;
+		}
+		  i.fa-birthday-cake, i.fa-home, i.fa-heart, i.glyphicon-education, i.fa-university, i.fa-clock-o
+        {
+            font-size:50px;
+            width:120px;
+            height:120px;
+            padding-top: 26%;
+            
+        }
+        #handles
+        {
+            margin-top: -50px;
+        }
+	}
+
+	@media only screen and (max-width: 531px)
+	{
+		#name_background
+		{
+			margin-top:-30%;
+		}
+		#my_image
+		{
+			margin-top: -20%;
+			margin-left: 10px;
+		}
+		#my_name
+		{
+			margin-top:40%;
+		}
+		.matter
+		{
+        	width:110px;
+        	height:110px;
+		}
+		  i.fa-birthday-cake, i.fa-home, i.fa-heart, i.glyphicon-education, i.fa-university, i.fa-clock-o
+        {
+            font-size:50px;
+            width:110px;
+            height:110px;
+            padding-top: 22%;
+            
+        }
+	}
+
+	@media only screen and (max-width: 485px)
+	{
+		#name_background
+		{
+			margin-top:-35%;
+		}
+		#my_name
+		{
+			margin-top:47%;
+		}
+		.matter
+		{
+        	width:100px;
+        	height:100px;
+        	padding-top: 27%;
+        	font-size: 17px;
+		}
+		  i.fa-birthday-cake, i.fa-home, i.fa-heart, i.glyphicon-education, i.fa-university, i.fa-clock-o
+        {
+            font-size:45px;
+            width:100px;
+            height:100px;
+            padding-top: 19%;
+            
+        }
+        #second_row
+        {
+        	margin-top: -40px;
+        }
+         #handles
+        {
+            margin-top: -70px;
+        }
+	}
+
+    @media only screen and (max-width: 435px)
+	{
+		#name_background
+		{
+			margin-top:-40%;
+            margin-left: 3px;
+		}
+		#my_image
+		{
+			
+			margin-left: 22px;
+		}
+		#my_name
+		{
+			margin-top:54%;
+		}
+		#cont
+		{
+			
+			margin-left: 3px;
+
+		}
+		.matter
+		{
+        	width:90px;
+        	height:90px;
+        	font-size: 13px;
+		}
+		  i.fa-birthday-cake, i.fa-home, i.fa-heart, i.glyphicon-education, i.fa-university, i.fa-clock-o
+        {
+            font-size:40px;
+            width:90px;
+            height:90px;
+            padding-top: 17%;
+            
+        }
+        #second_row
+        {
+        	margin-top: -40px;
+        }
+         #handles
+        {
+            margin-top: -90px;
+        }
+
+	}
+	@media only screen and (max-width: 380px)
+	{
+		#name_background
+		{
+			margin-top:-45%;
+			margin-left: 15px;
+		}
+		#my_image
+		{
+			margin-top: -22%;
+			margin-left: 22px;
+		}
+		#my_name
+		{
+			margin-top:61%;
+		}
+		#cont
+		{
+			margin-left: 15px;
+		}
+		.matter
+		{
+        	width:80px;
+        	height:80px;
+        	font-size: 13px;
+        	padding-top: 24%;
+		}
+		  i.fa-birthday-cake, i.fa-home, i.fa-heart, i.glyphicon-education, i.fa-university, i.fa-clock-o
+        {
+            font-size:35px;
+            width:80px;
+            height:80px;
+            padding-top: 16%;
+            
+        }
+        #second_row
+        {
+        	margin-top: -50px;
+        }
+        .sarath
+        {
+        	margin-left: -25px;
+        }
+
+	}
+
+	@media only screen and (max-width: 360px)
+	{
+		#my_image
+		{
+			margin-top: -22%;
+			margin-left: 10px;
+		}
+		.matter
+		{
+        	width:80px;
+        	height:80px;
+        	font-size: 10px;
+        	padding-top: 21%;
+		}
+	}
+
+	@media only screen and (max-width: 350px)
+	{
+		.matter
+		{
+        	width:70px;
+        	height:70px;
+		}
+		  i.fa-birthday-cake, i.fa-home, i.fa-heart, i.glyphicon-education, i.fa-university, i.fa-clock-o
+        {
+            font-size:30px;
+            width:70px;
+            height:70px;
+            padding-top: 15%;
+            
+        }
+        #second_row
+        {
+        	margin-top: -70px;
+        }
+        .sarath
+        {
+        	margin-left: -25px;
+        }
+	}
+
+	@media only screen and (max-width: 330px)
+	{
+		#my_image
+		{
+			margin-top: -29%;
+			margin-left: 10px;
+		}
+		 #handles
+        {
+            margin-top: -110px;
+        }
+        .matter
+		{
+        	width:80px;
+        	height:80px;
+        	font-size: 10px;
+        	padding-top: 24%;
+		}
+	}
+	@media only screen and (max-width: 290px)
+	{
+		.matter
+		{
+        	width:60px;
+        	height:60px;
+        	padding-top: 18%;
+		}
+		  i.fa-birthday-cake, i.fa-home, i.fa-heart, i.glyphicon-education, i.fa-university, i.fa-clock-o
+        {
+            font-size:25px;
+            width:60px;
+            height:60px;
+            padding-top: 13%;
+            
+        }
+        #second_row
+        {
+        	margin-top: -70px;
+        }
+        .sarath
+        {
+        	margin-left: -25px;
+        }
+	}
+	
+
+</style>
+
+
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="row" style="margin-top:60px;">
+           <div class="col-sm-2 col-xs-1 "></div>
+           <div class="col-sm-8 col-xs-10" id="cont" >
+           <br><br><br>
+            <p style="padding-left:20px;color:#f6f6ee"><b>
+                #include "&nbsp;iostream&nbsp;"&nbsp;;<br>
+                using namespace std&nbsp;;<br>
+                int main(&nbsp;void&nbsp;)<br>
+                {<br>
+                  &nbsp;&nbsp;cout&nbsp;<<&nbsp;"&nbsp;Think twice, Code once !&nbsp;"&nbsp;;<br>
+                  &nbsp;&nbsp;return 0&nbsp;;<br>
+                }<br>
+            </b>
+            </p>
+            <br><br>
+           </div>
+           <div class="col-sm-2 col-xs-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5 col-xs-3"></div>
+            <div class="col-sm-2 col-xs-6" style="text-align:center">
+                <p><a href='raju.jpg' target="_blank"><img src="raju.jpg" class="img-circle" alt="Kanakaraju"  id="my_image"></a></p>
+            </div>
+            <div class="col-sm-5 col-xs-3"></div>
+        </div>
+
+        <div>
+
+        <div class="row">
+            <div class="col-sm-2 col-xs-1 "></div>
+            <div class="col-sm-8 col-xs-10 "  id="name_background">
+                <h3  id="my_name">Kanakaraju Gullapudi</h3>
+                <hr>
+                <p style="text-align:center">
+                  <div class="col-xs-1 "></div>
+                  <div class="col-xs-10 ">
+                      <h4 style="display:inline"><i class="fa fa-quote-left"></i></h4>&nbsp;&nbsp;Being the richest man in the cemetary does not matter to me. Going to bed at night saying we've done something wonderful, that's what matters to me.<br><br><br><br>
+                   </div>
+                   <div class="col-xs-1 "></div>
+                </p>
+                <br><br><br><br>
+            </div>
+            <div class="col-sm-2 col-xs-1 "></div>
+        </div>
+
+        </div>
+
+        <br><br>
+     
+    <div class="row sarath">
+      <div class="col-sm-3 col-xs-2"></div>
+      <div class="col-sm-2 col-xs-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+       <div class="flipper">
+        <p style="text-align:center">
+            <div class="front">
+                <i class="fa fa-birthday-cake fa-5x" aria-hidden="true"></i>
+            </div>
+            <div class="back">
+                <h4 class="matter"><b>25<sup>th</sup> Sept 1996</b></h4>      
+            </div>
+        </p>
+        </div>
+      </div>
+      </div>
+
+        <div class="col-sm-2 col-xs-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+       <div class="flipper">
+        <p style="text-align:center">
+            <div class="front">
+                <i class="fa fa-home fa-5x" aria-hidden="true"></i>
+            </div>
+            <div class="back">
+                <h4 class="matter"><b>Andhra Pradesh</b></h4>      
+            </div>
+        </p>
+        </div>
+      </div>
+      </div>
+      
+      
+      <div class="col-sm-2 col-xs-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+       <div class="flipper">
+        <p style="text-align:center">
+            <div class="front">
+                <i class="fa fa-heart fa-5x" aria-hidden="true"></i>
+            </div>
+            <div class="back">
+                <h4 class="matter"><b>Coding<b></h4>      
+            </div>
+        </p>
+        </div>
+      </div>
+      </div>
+
+      
+
+
+    </div><br>
+    <div class="row sarath" id="second_row">
+        <div class="col-sm-3 col-xs-2"></div>
+
+         <div class="col-sm-2 col-xs-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+       <div class="flipper">
+        <p style="text-align:center">
+            <div class="front">
+                <i class="glyphicon glyphicon-education" aria-hidden="true"></i>
+            </div>
+            <div class="back">
+                <h4 class="matter"><b>BTech in ECE<b></h4>      
+            </div>
+        </p>
+        </div>
+      </div>
+      </div>
+
+        <div class="col-sm-2 col-xs-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+       <div class="flipper">
+        <p style="text-align:center">
+            <div class="front">
+                <i class="fa fa-university fa-5x" aria-hidden="true"></i>
+            </div>
+            <div class="back">
+                <h4 class="matter"><b>NIT Delhi</b></h4>      
+            </div>
+        </p>
+        </div>
+      </div>
+      </div>
+
+       <div class="col-sm-2 col-xs-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+       <div class="flipper">
+        <p style="text-align:center">
+            <div class="front">
+                <i class="fa fa-clock-o fa-5x" aria-hidden="true"></i>
+            </div>
+            <div class="back">
+                <h4 class="matter"><b>2014-2018</b></h4>      
+            </div>
+        </p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <br><br><br>
+   <div class="row" id="handles">
+   <div class="col-sm-2 col-xs-1"></div>
+   <div class="col-sm-8 col-xs-10"><h3>Handles :</h3><br></div>
+   <div class="col-sm-2 col-xs-1"></div>
+   </div>
+    <div class="row">
+    	<div class="col-sm-3 col-xs-2"></div>
+    	<div class="col-sm-6 col-xs-8">
+    	<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse"  href="#collapse1" title="click here to expand(or collapse)">
+        Linked In</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body" style="overflow:auto"><a href="https://www.linkedin.com/in/kanakaraju-gullapudi-aaab22b2/" target="_blank" style="text-decoration:none">https://www.linkedin.com/in/kanakaraju-gullapudi-aaab22b2/</a></div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse"  href="#collapse2" title="click here to expand(or collapse)">
+        Github</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse in">
+      <div class="panel-body" style="overflow:auto"><a href="https://github.com/gullapudikanakaraju" target="_blank" style="text-decoration:none">https://github.com/gullapudikanakaraju</a></div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse5" title="click here to expand(or collapse)">
+        Email</a>
+      </h4>
+    </div>
+    <div id="collapse5" class="panel-collapse collapse">
+      <div class="panel-body style="overflow:auto"" style="color:#0275d8">gullapudikanakaraju@gmail.com<br>141200020@nitdelhi.ac.in</div>
+    </div>
+  </div>
+  <div class="panel panel-default" style="border-radius:0">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse3" title="click here to expand(or collapse)">
+        Facebook</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse in">
+      <div class="panel-body" style="overflow:auto"><a href="https://www.facebook.com/profile.php?id=100005200126645" target="_blank" style="text-decoration:none">https://www.facebook.com/profile.php?id=100005200126645</a></div>
+    </div>
+  </div>
+  <div class="panel panel-default" style="border-radius:0">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse4" title="click here to expand(or collapse)">
+        Instagram</a>
+      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body" style="overflow:auto"><a href="https://www.instagram.com/kaju_sarah008/" target="_blank" style="text-decoration:none">https://www.instagram.com/kaju_sarah008/</a></div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col-sm-3 col-xs-8"></div>
+    </div>
+ 
+    <div class="row">
+   <div class="col-sm-2 col-xs-1"></div>
+   <div class="col-sm-8 col-xs-10"><h3>Resume :</h3></div>
+   <div class="col-sm-2 col-xs-1"></div>
+   </div>
+
+   <div class="row">
+   	<div class="col-sm-3 col-xs-2"></div>
+   	<div class="col-sm-5 col-xs-8"><h4>click here to see my <a href="141200020.pdf" target="_blank">My Resume</a></h4></div>
+   	<div class="col-sm-4 col-xs-2"></div>
+   </div>
+
+   <br><br><br><br>
+    </div>
+
+
+    
+    
+    
+
+</body>
+</html>
